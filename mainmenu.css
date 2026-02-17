@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-image: url("Picture2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mainHeader{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 2%;
+}
+#headerDesc{
+    color: white;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+.grid-holder{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 0.2fr 0.7fr 0.5fr 2fr 2fr;
+    gap: 5% 1%;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "mainHeader mainContact"
+        "img-container1 text-container1"
+        "spacing-line spacing-line"
+        "text-container2 img-container2"
+        "img-container3 text-container3";
+    padding: 0% 2%;
+    margin-bottom: 10%;
+}
+.mainHeader {grid-area: mainHeader;}
+.mainContact {grid-area: mainContact;}
+.spacing-line {grid-area: spacing-line; width: 100%; height: 100%; display: flex; justify-content: center; align-items: end;}
+.img-container1 {grid-area: img-container1;}
+.text-container1{grid-area: text-container1; display: flex; justify-content: center; align-items: center; width: 100%;}
+.img-container2 {grid-area: img-container2;}
+.text-container2{grid-area: text-container2; display: flex; justify-content: center; align-items: center; width: 100%;}
+.img-container3 {grid-area: img-container3;}
+.text-container3{grid-area: text-container3; display: flex; justify-content: center; align-items: center; width: 100%;}
+
+
+#img-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 80%;
+    height: 80%;
+}
+.portfolio-txt{
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 5px;
+    width: 100%;
+    font-size: 3rem !important;
+    display: flex;
+    justify-content: center;
+}
+.profilepic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: auto;
+    border-radius: 50%;
+}
+.mainContact{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.headerTitle{
+    font-size: 3rem;
+}
+.headerDesc1{
+    width: 75% !important;
+}
+
