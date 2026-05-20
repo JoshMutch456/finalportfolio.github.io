@@ -30,8 +30,9 @@ html{
 }
 .text-desc{
     margin-right: 5%;
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: white;
+    width: 30vw;
 }
 .img-gif{
     margin-left: 5%;
@@ -60,4 +61,17 @@ html{
     background-color: rgb(188, 185, 185);
     color: black;
     transition: 1s;
+}
+.code-imgs{
+    margin-left: 5%;
+    width: 45%;
+    height: auto;
+    margin-top: 3%;
+}
+.code-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
